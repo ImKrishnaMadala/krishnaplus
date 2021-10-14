@@ -1,7 +1,12 @@
 
 # 1.The Big Idea: 
 
+#### The main idea of our project is to create a web application that asks users for a series of inputs and recommends a drink to make (with instructions included). Our mission is to give users the tools to discover interesting drinks and make them so they can enjoy themselves and impress their company. We will explore the topics of building a database, engaging with a user, and building a visually appealing front end website. Our minimum viable product will be a basic website that asks the user for a series of inputs, such as tolerance, taste preferences, mood/vibe, social setting, etc. We would then return a picture of the drink with step by step instructions on how to make it. A stretch goal is to make the website more dynamic and engaging. It would also be great to enrich our data set by adding affiliate links showing the user where they can buy all the ingredients needed for the drink.
+
+
 # 2.Learning Goals
+
+#### Our shared learning goal is to become better at python and learn libraries/frameworks such as Flask. We also want to become better at writing software in a team setting. Sumer specifically wants to become better at using Github and the software design component of this project. Krishna and Isha have more of a focus on understanding how to implement the project from a technical standpoint. (Data structures, frameworks, UX/UI).
 
 # 3.Implementation Plan:
 

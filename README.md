@@ -1,1 +1,1 @@
-# krishnaplus
+Data set leveraged - Yummly-28K: a multimodal recipe dataset 

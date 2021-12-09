@@ -1,1 +1,1 @@
-Data set leveraged - Yummly-28K: a multimodal recipe dataset 
+Data set leveraged - The Cocktail Database API (Can be found at https://www.thecocktaildb.com/)

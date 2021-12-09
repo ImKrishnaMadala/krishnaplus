@@ -9,7 +9,7 @@ app = Flask(__name__,template_folder="templates")
 
 @app.get("/")
 def index():
-    f = r"https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
+    f = r"https://www.thecocktaildb.com/api/json/v1/1/random.php"
     data = requests.get(f)
     tt = json.loads(data.text)
     #webbrowser.open(tt["url"])

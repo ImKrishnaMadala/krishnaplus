@@ -1,26 +1,17 @@
+{% extends "layout_reg.html" %}
 
-{% block title %}Index{% endblock %}
+{% block title %}
+	The Variety Quiz Portal    
+{% endblock %}
+{% block pagetitle %}
+	Choose a Subject
+{% endblock %}
+{% block body %}
 
-{% block content %}
-<h1 align="center">{{ name }}</h1>
-<div align="center">
-	<img src="{{ image }}">
-</div>
-<br />
-<div>
-	<ul class="list-group list-group-flush">
-		{% for i in range(15) %}
-		{% if ingredients[i] != None and ingredients[i] != '' %}
-		<li class="list-group-item">
-			{{ ingredients[i] }} :: {{ measures[i] }}
-		</li>
-		{% endif %}
-		{% endfor %}
-	</ul>
-</div>
-<hr />
-<div>
-	{{ instructions }}
-</div>
-<br />
+	<form method="POST" action={{url_for('quiz')}}>
+	{% for sb in subList %}
+		<input type="submit" name="sub" value='{{sb.subject}}' style="height:150px; width:150px;border: 1px solid; word-wrap:normal; margin:10px; padding: 10px;  box-shadow: 5px 10px 10px #888888;">
+	{% endfor %}
+	</form>
+	
 {% endblock %}

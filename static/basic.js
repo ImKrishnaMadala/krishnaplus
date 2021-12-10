@@ -13,7 +13,7 @@ timeInSecs--;
 }
 else {
 clearInterval(ticker);
-startTimer(5*60); // 4 minutes in seconds
+startTimer(60); // 4 minutes in seconds
 }
 
 var mins = Math.floor(secs/60);
@@ -23,6 +23,6 @@ var pretty = ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" 
 document.getElementById("countdown").innerHTML = pretty;
 }
 
-startTimer(5*60); // 4 minutes in seconds
+startTimer(60); // 4 minutes in seconds
 
 //Credits to Gulzaib from Pakistan

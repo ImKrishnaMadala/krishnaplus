@@ -1,27 +1,28 @@
-document.getElementById('timer').innerHTML =
-  01 + ":" + 11;
-startTimer();
+var timeInSecs;
+var ticker;
 
-
-function startTimer() {
-  var presentTime = document.getElementById('timer').innerHTML;
-  var timeArray = presentTime.split(/[:]+/);
-  var m = timeArray[0];
-  var s = checkSecond((timeArray[1] - 1));
-  if(s==59){m=m-1}
-  if(m<0){
-    return
-  }
-  
-  document.getElementById('timer').innerHTML =
-    m + ":" + s;
-  console.log(m)
-  setTimeout(startTimer, 1000);
-  
+function startTimer(secs) {
+timeInSecs = parseInt(secs);
+ticker = setInterval("tick()", 1000); 
 }
 
-function checkSecond(sec) {
-  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
-  if (sec < 0) {sec = "59"};
-  return sec;
+function tick( ) {
+var secs = timeInSecs;
+if (secs > 0) {
+timeInSecs--; 
 }
+else {
+clearInterval(ticker);
+startTimer(5*60); // 4 minutes in seconds
+}
+
+var mins = Math.floor(secs/60);
+secs %= 60;
+var pretty = ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" ) + secs;
+
+document.getElementById("countdown").innerHTML = pretty;
+}
+
+startTimer(5*60); // 4 minutes in seconds
+
+//Credits to Gulzaib from Pakistan

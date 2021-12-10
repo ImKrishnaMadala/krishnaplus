@@ -1,6 +1,6 @@
 If you are viewing this via github in order to use this you can do pip install -r requirements.txt 
 
-Then set flask_app=app and do flask run. 
+Then set flask_app=index and do flask run. 
 
 Data set leveraged - The Cocktail Database API (Can be found at https://www.thecocktaildb.com/)
 

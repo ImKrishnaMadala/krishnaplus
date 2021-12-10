@@ -1,41 +1,16 @@
 <html>
 <head> 
-    
+    <link rel="stylesheet" href="/static/basic.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img style="max-width: 15vw; height: 20vh; display: block;" src="{{url_for('static',filename = 'default.svg')}}" alt="Swaperator Logo">
-          </a>
-        </div>
-      </nav>
-    <div style="background: black;">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    
-                    <form class="d-flex" action="/address" method="get">
-                        <input class="form-control" placeholder="search by address" name="address" type="text" />&nbsp;
-                        <button class="btn btn-primary" type="submit">search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <h1>New Cocktail in</h1>
+    <div class="numero_counting_wrapper">
+      <div class="numero_shape"></div>
     </div>
 
-    <div class="container">
-        {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-                {% for category, message in messages %}
-                <div class="alert alert-{{ category }}">{{ message }}</div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-    </div>
-
-    {% block content %}
-    {% endblock %}
+   
 </body>
 </html>
+{% block content %}
+{% endblock %}

@@ -53,3 +53,7 @@ def index():
     data = getRandomCocktail()
 
     return render_template('index.html', data=data)
+
+@app.route('/team')
+def team():
+    return render_template('team.html')

@@ -18,10 +18,7 @@ body{
     background-color: #1A88A1;
     color: #fff;
   }
-  
-  button:hover{
-    
-  }
+
   
   button:active{
     box-shadow: 0 1px #000;

@@ -28,6 +28,45 @@
         </div>
       </div>
     </div>
-  
+    <div class="container-fluid">
+      <h2>Big Idea</h2>
+      <h4> During COVID-19, many individuals often found themselves bored. To entertain themselves, they would do activities based on a random generator. For example, a Tiktok trend of going to Walmart and randomly pulling a DVD movie from their pile of movies and picking random snacks through an aisle while blind folded went viral. Our Team, Krishna and Brandon, wanted to create a simple random generator of alcoholic cocktails that people can make when they're bored.</h4>
+    </div>
     
+    <div class="container-fluid">
+      <h2>Results</h2>
+      <h4>The game will be if the player closes their eyes and opens them at a random moment they will be able to see a random cocktail that they can follow and make. We included the following:
+        1) Name of the Drink 
+        2) Image 
+        3) Brief description of the Drink 
+        4) List of Ingredients
+        5) Measurements of each Ingredients 
+        A 60 second timer is placed on the side of the webpage to illustrate when the next cocktail will come. We also added a downvote and upvote system to help see which cocktail is popular and which cocktails are the least popular. 
+        
+        Overall, the random generator will provide entertainment for those stuck at home. 
+        h4>
+    </div>
+    <div class="container-fluid">
+      <h2>Project Evolution / Narrative</h2>
+      <h4>
+        Before we started with the project, we had three team members; however, due to unforeseen circumstances we lost two members. Within the last 3 weeks, Brandon joined the project with the remaining member, Krishna, and started to framework the project. 
+
+Over the course of the project, we faced complications with implementing the API. At first, we were under the impression that we needed to use separate API addresses for each category of alcoholic beverage. For example, for the margarita category, we attempted to use the API address to pull information of the 4 types of drinks labeled as margarita; however since our project was focused on a random sort of drinks, we discovered that it would be difficult to use a loop for each category. We then attempted to download the json files of each category and then pull the drinks from data/name.json and then format it within the app.py; but we realized that method was too exhaustive. As a result, we used reddit, overstack flow, and youtube to finalize a simpler situation. After some digging we found a universal API for all the drinks and then needed to figure out how to pull specific data. 
+
+We knew that we needed to use keys to pull information from the json file but we weren’t sure which information was necessary and which information meant what. So we searched for a method online for formatting the json file so we can understand which item meant what. We discovered some extensions on Visual Studio Code called beautify that restructured the JSON files. As a result, we pulled some example json files like margita and discovered which keys we wanted to pull from the API. 
+
+After discovering which information we wanted for each type of drink, we needed to figure out how to display its categories. Using indexing, we pulled specific information and labeled it as variables so that they can be referenced using HTML. One of the problems we discovered was that some ingredients and measurements for drinks were scattered in the json file so we need to compile the data into a list before we can reference it into HTML. After demonstrating our code to some peers, we discovered that we can loop and append together the data.
+After the backend was completed, we focused on formatting the frontend of the website for best optimal user experience. We weren’t sure how users can capture information quickly, so we reexamined our classes on UI/UX and recalled a design format called the F-layout design. With a 60 second timer, it was crucial that users can examine all the information presented and obtain specific info that they desire. Afterwards, we focused on creating a centralized color and theme to maintain the consistency of the website. 
+
+      </h4>
+    </div>
+    
+    <div class="container-fluid">
+      <h2>Attribution</h2>
+      <h4>
+        https://www.thecocktaildb.com/ 
+        We used this public API source to pull our information for our webpage. 
+        
+      </h4>
+    </div>
   </div>

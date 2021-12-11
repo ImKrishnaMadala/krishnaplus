@@ -53,3 +53,11 @@ def index():
     data = getRandomCocktail()
 
     return render_template('index.html', data=data)
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
